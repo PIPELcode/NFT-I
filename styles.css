@@ -2,22 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --background: #02050e
+    --background: #02050e;
     --primary: #1e50ff;
     --secondary: #272d37;
+    --text-gray: #adb9c7;
+    --text-white: white
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
     list-style-type: none;
 }
 
 header {
     background-color: var(--secondary);
-    width: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,5 +28,220 @@ header {
     padding: 0px 30px;
     position: fixed;
     top: 0;
-    z-index: -1;   
+    z-index: 10;
+}
+
+.logo {
+    height: 40%;
+}
+
+.navbar, .navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 150px;
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.navbar-list li:first-child > a {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.cart-icon {
+    font-weight: 600;
+    border-radius: 10px;
+    
+}
+
+main {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    width: 100%;
+}
+
+#hero {
+    margin-top: 60px;
+    padding: 70px 0px;;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;    
+}
+
+.hero-info h1 {
+    font-size: 48px;
+    font-weight: 800;
+    width: 80%;
+    color: var(--text-white);
+    min-width: 500px;
+}
+
+.hero-info p {
+    font-size: 14px;
+    color: var(--text-gray);
+    width: 70%;
+}
+
+.hero-info p > span {
+    font-weight: 800;
+}
+
+.hero-info a {
+    color: var(--text-white);
+    background-color: var(--primary);
+    width: 120px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.hero-card {
+    width: 300px;
+    background-color: var(--secondary);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hero-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-card-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-card-top h3 {
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+}
+.hero-card-top span {
+    background-color: var(--primary);
+    text-align: center;
+    width: 50px;
+    padding: 5px 0px;
+    font-size: 14px;
+    border-radius: 10px;
+
+}
+
+.hero-card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-card-creator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-card-creator img {
+    width: 40px;
+    height: 40px;
+}
+
+.hero-card-creator p:first-child {
+    color: var(--text-gray);
+    font-size: 12px;
+}
+
+.hero-card-price p {
+    font-size: 12px;
+    color: var(--text-gray);
+}
+
+.hero-card-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-card-price span {
+    font-weight: 600;
+}
+
+#info {
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-direction: column;
+}
+
+#info h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.info-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    width: 300px;
+    height: 290px;
+    background-color: var(--secondary);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.info-card-img {
+    width: 50px;
+}
+
+.info-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: var(--text-gray);
+    text-align: center;
 }
